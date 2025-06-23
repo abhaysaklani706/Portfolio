@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Abhay Portfolio</title>
+  <meta name="indexport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/logo.jpg" />
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Vanta.js & Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+
+
+<!-- Header -->
+  <header class="fixed w-full top-0 left-0 bg-[#0f0f0f]/90 px-[10%] py-0 z-[1000] flex justify-between items-center animate__animated animate__fadeInDown">
+    
+     <h2 class="w-left text-3xl font-bold text-[#00bcd4] mb-10">Port<span class="text-[#f1f1f1]">folio</span></h2>
+    <nav class="space-x-6 text-[#ddd] text-sm relative group">
+  <a href="index.html" class="hover:text-[#00bcd4]">Home</a>
+
+  <!-- About with dropdown -->
+  <div class="inline-block relative group">
+    <button class="hover:text-[#00bcd4] focus:outline-none">About</button>
+    <div class="absolute hidden group-hover:block mt-2 bg-[#1e1e1e] shadow-lg rounded-md z-[999]">
+      <a href="index.html" class="block px-4 py-2 text-sm hover:bg-[#00bcd4] hover:text-black rounded-t-md">About Me</a>
+      <a href="Eduction.html" target="_blank" class="block px-4 py-2 text-sm hover:bg-[#00bcd4] hover:text-black">Education</a>
+      <a href="certificates.html" class="block px-4 py-2 text-sm hover:bg-[#00bcd4] hover:text-black rounded-b-md">Certificates</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="hover:text-[#00bcd4]">Services</a>
+  <a href="index.html" class="hover:text-[#00bcd4]">Projects</a>
+  <a href="index.html" class="hover:text-[#00bcd4]">Contact</a>
+</nav>
+
+  </header>
+
+
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vanta-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Vanta net Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Content Section -->
+  <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-10 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-cyan-400 mb-10 animate-pulse">My Education</h1>
+
+    <div class="space-y-6 max-w-xl w-full">
+      <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg border border-white/20">
+        <h2 class="text-2xl font-semibold text-white">Master of Computer Applications (MCA)</h2>
+        <p class="text-sm text-gray-300 mt-2">Graphic Era Hill University Dehradun| 2023 - 2025</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg border border-white/20">
+        <h2 class="text-2xl font-semibold text-white">Bachelor of Science in Information Technology</h2>
+        <p class="text-sm text-gray-300 mt-2">Graphic Era Hill University Dehradun  | 2020 - 2023</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg border border-white/20">
+        <h2 class="text-2xl font-semibold text-white">Senior Secondary</h2>
+        <p class="text-sm text-gray-300 mt-2">CBSE Board | 2019 - 2020</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg border border-white/20">
+        <h2 class="text-2xl font-semibold text-white">High School </h2>
+        <p class="text-sm text-gray-300 mt-2">CBSE Board | 2017 - 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanta.NET Init -->
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      color: 0x00bcd4,
+      shininess: 50.0,
+      waveHeight: 20.0,
+      netSpeed: 1.0,
+      zoom: 1.2,
+      backgroundColor: 0x000000
+    });
+  </script>
+</body>
+</html>
